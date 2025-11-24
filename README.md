@@ -1,12 +1,16 @@
-# Cross Prompting Consistency with Segment Anything Model for Semi-supervised Medical Image Segmentation (MICCAI 2024)
+# NoiseSAM: Robust Semi-Supervised Medical Image Segmentation by Teaching SAM with Noise
 
 ### Introduction
 
-We provide the codes for Noise-SAM on the ACDC Dataset here.
+We provide the codes for NoiseSAM here.
+
 ### Requirements
 Please see requirements.txt
 
 ### Usage
+
+Using the ACDC dataset as an example, the process for other datasets like BUSI and Synapse is similar.
+
 1. Data preparation:
 
    Please download the preprocessed dataset provided by https://github.com/HiLab-git/SSL4MIS/ first and put them into the diretory "/data/ACDC/".
@@ -29,6 +33,5 @@ Please see requirements.txt
    ```
    Before running the code, related paths should be set appropriately. (1) Line 76-79, please provide the path of the .csv file, which records the prediction results. (2) Provide the same paths for the same parameters set in the training code. (3) Line 104, please provide the path to save the output results. (4) Line 114, please provide the path of the model to be tested. (5) Line 118, please provide the name for the .csv file.
 
-### Acknowledgement
-This code is based on the framework of [SSL4MIS](https://github.com/HiLab-git/SSL4MIS/) and [SAMed](https://github.com/hitachinsk/SAMed). We thank the authors for their 
+
 
